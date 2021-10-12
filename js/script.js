@@ -1,12 +1,16 @@
-let num = +prompt(`Type a number:`);
-for (i = 0;;i++){
-    if(i % 2 !== 0 && i % i === 1){
-        console.log(`true number:${i}`);
-    }else{
-        console.log(`false number:${i}`);
-    }
+let n = +prompt(`Type a number:`);
 
-    if(i <= 2000){
-        break;
+nextPrime:
+for (let i = 2;i <= n;i++){
+    
+    for(let j = 2;j < i; j++){
+        if(i % j === 0) {
+            console.log(`${j} = false`);
+        }else{
+            console.log(`${j} = true`);
+        }
     }
-}
+    
+
+
+};
