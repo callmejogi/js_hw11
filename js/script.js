@@ -1,15 +1,14 @@
 let n = +prompt(`Type a number:`);
 
-nextPrime:
+
 for (let i = 2; i <= n; i++) { 
 
-  for (let j = 2; j < i; j++) { 
-    if (i % j === 0) {
-        console.log(`false number ${i}`); 
-        continue nextPrime;
-    };
-
+  if (n % i === 0) {
+    console.log(`false number ${n}`); 
+    break;
+  }else{
+    console.log( `true number ${n}`);
+    break;
   };
 
-  console.log( `true number ${i}`); 
 }
